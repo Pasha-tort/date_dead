@@ -1,0 +1,117 @@
+.information {
+    min-height: 1112px;
+    margin-top: 146px;
+    &__descr {
+        position: relative;
+        width: 442px;
+        height: 437px;
+        border: 1px solid #FFFFFF;
+        border-radius: 3px;
+        margin: 0 auto;
+        img {
+            position: absolute;
+            border-radius: 100%;
+            overflow: hidden;
+            left: 50%;
+            transform: translateX(-50%) translateY(-50%);
+        }
+    }
+    &__text {
+        margin: 128px auto 0;
+        width: 351px;
+        font-size: 25px;
+        line-height: 35px;
+        font-weight: 500;
+        text-align: center;
+        color: #fff;
+        z-index: 3;
+        span {
+            color: $first-color;
+        }
+    }
+    &__descr-fone {
+        position: relative;
+        margin: 69px auto 0;
+        width: 1440px;
+        height: 606px;
+        background: url('../img/sunAndWoman.jpg') center (center/cover) no-repeat;
+        &:after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0,0,0,.5);
+            z-index: 2;
+        }
+    }
+    &__text-img {
+        width: 380px;
+        margin: 0 auto;
+        position: relative;
+        padding-top: 240px;
+        font-size: 25px;
+        line-height: 35px;
+        font-weight: 400;
+        text-align: center;
+        color: #fff;
+        z-index: 3;
+        span {
+            color: $first-color;
+        }
+    }
+
+}
+
+@media(max-width: 576px) {
+    .information {
+        min-height: 623px;
+        margin-top: 0;
+        &__descr {
+            width: 255px;
+            height: 252px;
+            border: 1px solid #FFFFFF;
+            border-radius: 3px;
+            margin: 0 auto;
+            img {
+                position: absolute;
+                border-radius: 100%;
+                overflow: hidden;
+                left: 50%;
+                transform: translateX(-50%) translateY(-50%);
+            }
+        }
+        &__text {
+            margin: 58px auto 0;
+            width: 210px;
+            font-size: 16px;
+            line-height: 25px;
+        }
+        &__descr-fone {
+            position: relative;
+            margin-top: 40px;
+            width: 100%;
+            height: 331px;
+            overflow: hidden;
+            background: url('../img/sunAndWoman.jpg') center (center/cover) no-repeat;
+            &:after {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                background: rgba(0,0,0,.5);
+                z-index: 2;
+            }
+        }
+        &__text-img {
+            width: 219px;
+            margin: 0 auto;
+            padding-top: 102px;
+            font-size: 16px;
+            line-height: 25px;
+        }
+    }
+}

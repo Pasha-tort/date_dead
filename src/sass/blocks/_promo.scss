@@ -1,0 +1,124 @@
+.promo {
+    
+    &__bg {
+        background: url('../img/5bc4a6ccdbbee166782b90641.png') center (center/cover) no-repeat;
+        width: 100%;
+        height: 942px;
+        position: absolute;
+        top: 0;
+        
+    }
+    &__line {
+        display: block;
+        background: rgba(255, 255, 255, 0.2);
+        width: 1440px;
+        height: 2px;
+        margin-top: 20px;
+        &_go-test {
+            
+            margin-top: 0;
+        }
+    }
+    &__star {
+        position: relative;
+        margin: 41px auto 0;
+        width: 390px;
+        height: 390px;
+
+        img {
+            width: 100%;
+            display: block;
+            margin: 0 auto;
+            opacity: 0.2;
+        }
+    }
+    &__woman {
+        position: absolute;
+        width: 61%;
+        height: auto;
+        top: 50%;
+        left: 50%;
+        transform: translateX(-50%) translateY(-50%);
+        border-radius: 100%;
+        overflow: hidden;
+        img {
+            width: 100%;
+            opacity: 1; 
+        }
+    }
+    &__buttons {
+        position: relative;
+        &:nth-child(4) {
+            margin-top: 35px;
+        }
+    }
+    
+}
+
+@media(max-width: 1440px) {
+    .promo {
+        &__bg {
+            height: 830px;
+            top: 30px;
+        }
+    }
+}
+@media(max-width: 576px) {
+    .promo {
+        &__bg {
+            background: url('../img/blik.png') center (center/cover) no-repeat;
+            width: 100%;
+            height: 402px;
+            top: 20px;
+            position: absolute;
+            
+            
+        }
+        &__line {
+            display: block;
+            position: absolute;
+            background: rgba(255, 255, 255, 0.2);
+            width: 320px;
+            height: 1px;
+            left: -11px;
+            top: 36px;
+            margin-top: 0;
+            &_go-test {
+                top: 124px;
+            }
+        }
+        &__star {
+            position: relative;
+            margin: 24px auto 0;
+            width: 225px;
+            height: 225px;
+    
+            img {
+                width: 100%;
+                display: block;
+                margin: 0 auto;
+                opacity: 0.2;
+            }
+        }
+        &__woman {
+            position: absolute;
+            width: 61%;
+            height: auto;
+            top: 50%;
+            left: 50%;
+            transform: translateX(-50%) translateY(-50%);
+            border-radius: 100%;
+            overflow: hidden;
+            img {
+                width: 100%;
+                opacity: 1; 
+            }
+        }
+        &__buttons {
+            position: relative;
+            &:nth-child(4) {
+                margin-top: 20px;
+            }
+        }
+    }
+}

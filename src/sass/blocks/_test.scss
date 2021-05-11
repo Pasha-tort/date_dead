@@ -1,0 +1,23 @@
+.test {
+    min-height: 301px;
+    margin-top: 133px;
+    &__title {
+        font-weight: 400;
+        font-size: 25px;
+        line-height: 29px;
+        text-align: center;
+        color: $first-color;
+        text-transform: uppercase;
+    }
+}
+
+@media(max-width: 576px) {
+    .test {
+        min-height: 182px;
+        margin-top: 53px; 
+        &__title {
+            font-size: 16px;
+            line-height: 18.75px;
+        }
+    }
+}

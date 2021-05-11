@@ -1,0 +1,55 @@
+@import "base/variables";
+@import "base/button";
+@import "base/other";
+
+@import "libs/fonts";
+
+@import "blocks/promo";
+@import "blocks/information";
+@import "blocks/test";
+@import "blocks/go-test";
+@import "blocks/footer-descr";
+
+
+
+
+
+* {
+    font-family: 'Roboto';
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #202024;
+    position: relative;
+}
+
+.main-container {
+    position: relative;
+}
+
+.container {
+    width: 1440px;
+    margin: 0 auto;
+    position: relative;
+    &_go-test {
+        padding-top: 224px;
+    }
+}
+
+@media (max-width: 576px) {
+    .container {
+        width: 298px;
+        position: relative;
+        &__information {
+            width: 320px;
+            overflow: hidden;
+            padding-top: 58px;
+        }
+        &_go-test {
+            padding-top: 124px;
+        }
+    }
+}
